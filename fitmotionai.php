@@ -111,7 +111,7 @@
     <a href="index.php" id="home">Home</a>
     <script>
         document.getElementById("openNotebook").onclick = function() {
-            window.open("http://localhost:8888/notebooks/fitnation/FitMotionAi.ipynb", "_self");
+            window.open("http://localhost:8888/notebooks/ipynb/fitnation/FitMotionAi.ipynb", "_self");
         };
     </script>
 

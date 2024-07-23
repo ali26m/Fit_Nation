@@ -57,9 +57,6 @@ $con = new mysqli('localhost', 'root', '', 'fitnation');
                     <span style="margin-right: 1%;"><?php echo $post["Likes"]; ?></span>
                     <?php $LikeId = $post["Id"];
                     echo "<a href=\"DB/connections/addLike.php?id=$LikeId\"><img id=\"like\" src=\"assets/icons/like2.png\"></a>" ?>
-                    <!-- <?php $saveId = $post["Id"];
-                            echo "<a href=\"DB/connections/addSave.php?id=$saveId\"><img id=\"save\" src=\"assets/icons/save.png\"></a>" ?> -->
-                    <!-- <a href="DB/connections/addSave.php"><img id="save" src="assets/icons/save.png"></a> -->
                 </div>
             </div>
 
@@ -73,12 +70,8 @@ $con = new mysqli('localhost', 'root', '', 'fitnation');
     <div id="rightSide">
         <form action="DB/connections/insertpost.php" method="post" id="newPost">
             <textarea name="textarea" id="textarea" placeholder="Whats on your mind" required></textarea><br>
-            <!-- <input type="file" name="image" style="padding-top: 50%;" id="image"> -->
-            <!-- <img src="assets/icons/uploadImg.png" id="uploadImg"> -->
             <input type="submit" value="Push up" id="pushUp">
         </form>
-
-        <!-- <a href="favoritePosts" id="favPosts">Favorite posts</a> -->
     </div>
 
     <script>
